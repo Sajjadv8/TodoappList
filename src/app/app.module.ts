@@ -11,6 +11,7 @@ import { SLinComponent } from './slin/slin.component';
 import { LoginComponent } from './slin/login/login.component';
 import { SignupComponent } from './slin/signup/signup.component';
 import { AboutComponent } from './about/about.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,13 +22,16 @@ import { AboutComponent } from './about/about.component';
     SLinComponent,
     LoginComponent,
     SignupComponent,
-    AboutComponent
+    AboutComponent,
+    
+    
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

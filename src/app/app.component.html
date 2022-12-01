@@ -2,47 +2,25 @@
 <nav class="navbar navbar-expand-lg bg-light ">
   <div class="container-fluid">
     <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">List</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/list">List</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Form</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/form">Form</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Login&SignUp</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/slin">Login&SignUp</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">about</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/about']">about</a>
       </li>
     </ul>
   </div>
 </nav>
+
+
 <!-----list-->
 
 <div class="row">
-  <div class="container-fluid">
-    <app-list></app-list>
-  </div>
-
-
-  <!------form-->
-
-
-
-  <form>
-    <div class="container">
-      <app-form></app-form>
-    </div>
-  </form>
-
-
-<!---login&signup-->
-  <form>
-    <div class="containet">
-      <app-slin></app-slin>
-    </div>
-  </form>
-  <div>
-    <app-about></app-about>
-  </div>
+  <router-outlet></router-outlet>
 </div>
