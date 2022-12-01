@@ -12,6 +12,7 @@ import { LoginComponent } from './slin/login/login.component';
 import { SignupComponent } from './slin/signup/signup.component';
 import { AboutComponent } from './about/about.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
